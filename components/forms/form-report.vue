@@ -48,8 +48,8 @@ export default {
       'Queja',
       'Reclamo'
     ],
-    transform: 0,yarn 
-    description: "",
+    description: null,
+    transform: 0,
     nameRules: [
         v => !!v || 'El campo es requerido',
         v => v.length <= 10 || 'Name must be less than 10 characters'
