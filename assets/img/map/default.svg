@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="actual__position" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38 94" style="enable-background:new 0 0 38 94;" xml:space="preserve">
+
+  <style>
+    #point{
+      animation-name: scale;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      transform-origin: bottom;
+    }
+    #marker{
+      animation-name: move;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      transform-origin: bottom;
+    }
+    @keyframes scale {
+      from, to {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(.5);
+      }
+    }
+    @keyframes move {
+      from, to {
+        transform: translateY(0);
+        transform: scale(.5);
+      }
+      50% {
+        transform: translateY(10px);
+        transform: scale(1);
+      }
+    }
+  </style>
+
+  <path id="point" fill="#303F9F"  d="M19,74C8.5,74,0,78.5,0,84c0,5.5,8.5,10,19,10s19-4.5,19-10C38,78.5,29.5,74,19,74z M19,90	c-6.8,0-12.3-2.9-12.3-6.5S12.2,77,19,77s12.3,2.9,12.3,6.5S25.8,90,19,90"/>
+
+  <path id="marker" fill="#303F9F"  d="M32.4,6.8c-7.4-9-19.4-9-26.9,0c-6.7,8.1-7.4,23.4-1.8,32.6L19,66l15.2-26.7C39.9,30.2,39.1,14.9,32.4,6.8z M19,35c-6.6,0-12-5.4-12-12c0-6.6,5.4-12,12-12s12,5.4,12,12C31,29.6,25.6,35,19,35z"
+  />
+</svg>

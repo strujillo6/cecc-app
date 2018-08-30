@@ -1,0 +1,54 @@
+{
+      "id": 1,
+      "name": "Santiago",
+      "lastName": "Valbuena Trujillo",
+      "email": "email@test.co",
+      "phone": "300300300",
+      "Gener": "Sr",
+      "age":"",
+      "imagePerfil":"https://avatars0.githubusercontent.com/u/9064066?v=4&s=460",
+      "activity-favorites": [
+        {
+          "id":"1",
+          "title": "Activity Test",
+          "short_description": "short_description",
+          "date": "12/7/18"
+        },
+        {
+          "id":"2",
+          "title": "Activity Test 2",
+          "short_description": "short_description",
+          "date": "12/7/18"
+        }
+      ],
+      "reports": [
+        {
+          "id":"1",
+          "type": "Petición",
+          "location": {
+            "lat": "5.0377142",
+            "lon": "-73.9976215"
+          },
+          "images": {},
+          "description": "Hay un daño en el semaforo",
+          "number": "4598728394",
+          "status":"Abierto",
+          "history": [
+            {
+              "id": "1",
+              "date": "12/7/18",
+              "title": "PQR Creado",
+              "description": "Se abre el caso, pendiente por revisioón del área encargada",
+              "author": "User Test"
+            },
+            {
+              "id": "2",
+              "date": "13/8/18",
+              "title": "En gestión",
+              "description": "Se escala para el área ecargada",
+              "author": "User Test"
+            }
+          ]
+        }
+      ]
+    }

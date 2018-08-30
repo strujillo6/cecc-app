@@ -1,0 +1,67 @@
+[
+    {
+      "id":"1",
+      "title": "Cuenteros al Parche",
+      "slug": "Cuenteros_al_Parche",
+      "short_description": "La Fábrica de Teatro El Parche Nacional extiende una grata invitación para que grandes y chicos aprovechen y se acerquen a las diversas actividades programadas: Parche de los Juglares, todos los sábados doble función; 4 y 5 p.m, entrada libre, aporte voluntario: Un espacio diseñado para dejar volar nuestra imaginación a través de las palabras. Domingos en Familia, todos los domingos a las 3 p.m, entrada libre, aporte voluntario: Un espacio diseñado para el arte y la cultura, en donde el público podrá disfrutar de diferentes espectáculos artísticos para que lo disfruten en familia.",
+      "date": "11/08/18",
+      "image": "http://www.culturarecreacionydeporte.gov.co/sites/default/files/ensamblaje.jpg"
+    },
+    {
+      "id":"2",
+      "title": "El cómic se toma la biblioteca Julio Mario Santo Domingo",
+      "slug": "El_comic_se_toma_la_biblioteca_Julio_Mario_Santo_Domingo",
+      "short_description": "El sábado 25 de agosto de 2018 se conmemora el segundo año de la Sala de Distrito Gráfico, especializada en cómic y novela gráfica, la Biblioteca Julio Mario Santo Domingo. Para realizará una jornada centrada en el cómic. Desde las 11:00 a.m. hasta las 6:00 p.m., los visitantes podrán crear su propio cómic a partir de talleres de narrativa gráfica, creación de historias y personajes, y arte secuencial.",
+      "date": "25/8/18",
+      "image": "http://www.bogota.gov.co/sites/default/files/styles/eventos/public/1528422918_412207_1528424108_noticia_normal.jpg?itok=5odOelwb"
+    },
+    {
+      "id":"3",
+      "title": "Nuevo Festival por la Vida y por la Paz en Usaquén",
+      "slug": "Nuevo_Festival_por_la_Vida_y_por_la_Paz_en_Usaquén",
+      "short_description": "La Alcaldía de Bogotá y la Alcaldesa Local de Usaquén, Mayda Velásquez Rueda, invitan al cierre de las presentaciones artísticas del Festival por la Vida y por la Paz en Usaquén que se llevarán a cabo este sábado 25 de agosto, a las 2:00 p.m., en el parque Primaveral (calle 181 A entre carreras 7 B y 8)",
+      "date": "25/8/18",
+      "image": "https://conexioncapital.co/wp-content/uploads/2018/08/PREPA%CC%81RESE.jpg"
+    },
+    {
+      "id":"4",
+      "title": "Circo Gigante Dinosaurios",
+      "slug": "Circo_Gigante_Dinosaurios",
+      "short_description": "Llega el Circo Gigante de Dinosaurios a Bogotá, desde el 31 de agosto al 23 de Septiembre de 2018 en MAKRO DE LA AUTOPISTA NORTE CON CALLE 196.",
+      "date": "31/08/18",
+      "image": "https://0b704daaaeca42047be7-e9eda9b75b7eaa5ed72327ff54b07596.ssl.cf1.rackcdn.com/images/eventos/6609/imagens/thumb/circo-gigante-dinosaurios-bogota.jpg?1533742746"
+    },
+    {
+      "id":"5",
+      "title": "Feria del Hogar",
+      "slug": "Feria_del_Hogar",
+      "short_description": "Corferias organiza del 3 al 19 de septiembre la Feria del hogar, en donde reúne la mayor oferta de bienes de consumo y productos nacionales e importados de la pequeña, mediana y gran empresa. Un evento en donde participan más de 950 expositores del país.",
+      "date": "02/09/18",
+      "image": "https://feriadelhogar.com/img/galeria/web/hogar-15.jpg"
+    },
+    {
+      "id":"6",
+      "title": "Aniversario StyleForce 2018",
+      "slug": "Aniversario_StyleForce_2018",
+      "short_description": "StyleForce está de aniversario, 20 años que se deben celebrar con toda la oferta cultural. El Colectivo cultural es ganador del Programa Distrital de Estímulos 2017 en la beca 'Realización de Eventos Artísticos y Culturales'  en alianza  con el Fondo de Desarrollo Local de Ciudad Bolívar.",
+      "date": "02/09/18",
+      "image": "http://www.culturarecreacionydeporte.gov.co/sites/default/files/poster_aniversario_5.jpg"
+    },
+    {
+      "id":"7",
+      "title": "Festival Jazz al Parque",
+      "slug": "Festival_Jazz_al_Parque",
+      "short_description": "Disfrute de los sonidos del Jazz al aire libre, música que se ha tomado los diferentes escenarios de Bogotá desde 1996, este es un evento organizado por el Instituto de Cultura y Turismo de la ciudad. Uno de los objetivos del Festival, es tener la oportunidad de mostrar el talento nacional e impulsar a los artistas a nivel internacional, apoyados por las diferentes cadenas radiales de las universidades.",
+      "date": "11/09/18",
+      "image": "http://www.idartes.gov.co/sites/default/files/styles/cuerpo_evento/public/2018-04/Sin%20t%C3%ADtulo_0.jpg?itok=j7OBdYCA"
+    },
+    {
+      "id":"8",
+      "title": "Concierto Animal - Maria Del Sol y Cantaclaro",
+      "": "Concierto_Animal_Maria_Del_Sol_y_Cantaclaro",
+      "short_description": "Si hay un plan que se puede disfrutar en familia y que sea diferente, es el de ir a Teatro. Al Teatro Mayor Julio Mario Santo Domingo llega, Con...Cierto Animal. Una obra en la que María Pimientas vive obsesionada con el orden y la limpieza. Sin embargo, comparte su casa con varias mascotas desordenadas que dejan regueros por todas partes.",
+      "date": "23/09/18",
+      "image": "https://0b704daaaeca42047be7-e9eda9b75b7eaa5ed72327ff54b07596.ssl.cf1.rackcdn.com/images/eventos/6466/imagens/thumb/con-cierto-anima-maria-del-sol-y-cantaclaro.png?1530746143"
+    }
+  ]
+

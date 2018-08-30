@@ -1,0 +1,112 @@
+
+[{
+  "id":"1",
+  "type": "Queja",
+  "location": {
+    "lat": "4.720842562572665",
+    "lon": "-74.07364116846821"
+  },
+  "images": "http://www.vanguardia.com/sites/default/files/imagecache/Noticia_600x400/foto_grandes_400x300_noticia/2013/10/16/DATA_ART_755537_BIG_CE.jpg"
+  ,
+  "description": "Desde hace una semana el semaforo del sector Presenta daño en la bombilla de color verde",
+  "number": "4598728394",
+  "status":"Abierto",
+  "history":
+  [
+    {
+      "id": "1",
+      "date": "12/8/18",
+      "title": "PQR Creado",
+      "description": "Se abre el caso, pendiente por revisión del área encargada",
+      "author": "Camilo Monroy"
+    }
+  ]
+},
+{
+  "id":"2",
+  "type": "Petición",
+  "location": {
+    "lat": "4.688698981565908",
+    "lon": "-74.04728293418884"
+  },
+  "images": "https://www.elheraldo.co/sites/default/files/body/2016/09/16/articulo/oscuridad_en_miramar.jpg",
+  "description": "Hace Varias noches la lampara de la calle que da a la Estación de Servicio Terpel No funciona, solicitamos la revisión de la misma ya que se presta para que el barrio se vuelva inseguro",
+  "number": "4598728395",
+  "status":"En Proceso",
+  "history":
+  [
+    {
+      "id": "1",
+      "date": "26/8/18",
+      "title": "PQR Creado",
+      "description": "Se abre el caso, pendiente por revisión del área encargada",
+      "author": "Ermenlinda Silva"
+    }
+  ]
+},
+{
+  "id":"3",
+  "type": "Petición",
+  "location": {
+    "lat": "4.697606137368615",
+    "lon": "-74.04103338718414"
+  },
+  "images": "http://i.imgur.com/ZldtZpM.jpg",
+  "description": "Se solicita a las autoridades mayor presencia en el Parque Santa Barbara 1, ya que despues de las 7 p.m. No se ven motorizados del cuadrante",
+  "number": "4598728396",
+  "status":"Abierto",
+  "history":
+  [
+    {
+      "id": "1",
+      "date": "27/8/18",
+      "title": "PQR Creado",
+      "description": "Se abre el caso, pendiente por revisión del área encargada",
+      "author": "Juana Munoz"
+    }
+  ]
+},
+{
+"id":"4",
+"type": "Queja",
+"location": {
+  "lat": "4.711445150930144",
+  "lon": "-74.05657142400742"
+},
+"images": "https://igx.4sqi.net/img/general/600x600/50322437_dadYpSuWirWc0yoOvPU8dGyxcq8SjL98Du74IVCwqYw.jpg",
+"description": "Estamos cansados del sonido tan alto que colocan en la Iglesia San Maximiliano de Kolbe cada vez que hacen sus reuniones",
+"number": "4598728397",
+"status":"Abierto",
+"history":
+[
+  {
+    "id": "4",
+    "date": "21/8/18",
+    "title": "PQR Creado",
+    "description": "Se abre el caso, pendiente por revisión del área encargada",
+    "author": "Jose Sanchez"
+  }
+]
+},
+{
+  "id":"5",
+  "type": "Petición",
+  "location": {
+    "lat": "4.723961721804621",
+    "lon": "-74.07204081552908"
+  },
+  "images": "https://andaluciainformacion.es/media/486438/el-pp-denuncia-la-falta-de-senalizacion-en-las-calles-ante-la-motorada.jpg",
+  "description": "Se solicita demarcar las calles y asignar Señales de transito en el area debido a que hay mucho estudiante en el sector",
+  "number": "4598728398",
+  "status":"Abierto",
+  "history": [
+    {
+      "id": "5",
+      "date": "21/8/18",
+      "title": "PQR Creado",
+      "description": "Se abre el caso, pendiente por revisioón del área encargada",
+      "author": "David Cabezas"
+    }
+  ]
+}
+]

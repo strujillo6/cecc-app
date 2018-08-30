@@ -1,0 +1,41 @@
+{
+  "name": "test-nuxt",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "Sergio Trujillo del Valle <trujillo.sergio6@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "heroku-postbuild": "npm run build",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "engines": {
+    "node": "v8.11.3",
+    "yarn": "1.9.4"
+  },
+  "dependencies": {
+    "@mapbox/mapbox-gl-geocoder": "^2.3.0",
+    "@nuxtjs/auth": "^4.5.1",
+    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/pwa": "^2.0.8",
+    "@nuxtjs/vuetify": "^0.4.2",
+    "nuxt": "^1.0.0",
+    "nuxt-leaflet": "^0.0.10",
+    "vee-validate": "^2.1.0-beta.8",
+    "vue2-leaflet": "^1.0.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/localtunnel": "^1.0.2",
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0"
+  }
+}
