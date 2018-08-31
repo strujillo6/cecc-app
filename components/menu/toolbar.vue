@@ -7,9 +7,9 @@
     <v-btn flat icon v-if="!menu">
       <v-icon>navigate_before</v-icon>
     </v-btn>
-    <div class="logo" v-if="menu">
+    <nuxt-link class="logo" v-if="menu" to="./">
       <img src="../../assets/img/logo-flat.svg" alt="Logo de Cultura Etica y Convivencia Ciudadana">
-    </div>
+    </nuxt-link>
     <v-toolbar-title>{{title}}</v-toolbar-title>
     <v-spacer></v-spacer>
 

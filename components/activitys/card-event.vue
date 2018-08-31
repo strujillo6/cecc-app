@@ -1,5 +1,6 @@
 <template>
-    <v-card  >
+<!-- Componente que contienen el diseño de las card de actividades -->
+    <v-card >
         <v-card-media
             :src="event.image"
             height="200px"
@@ -32,25 +33,25 @@ export default {
   },
    methods: {
      viewEvent(_id){
-       this.$router.push('/actividades/'+ _id)
+      this.$router.push('/actividades/'+ _id)
      }
    }
 }
 </script>
 <style>
 .card__media{
-    align-items: flex-end;
-    cursor: pointer;
+  align-items: flex-end;
+  cursor: pointer;
 }
 .title__event{
-    width: 100%;
-    height: 200px;
-    background: linear-gradient(180deg, rgba(0,0,0,.3) 10%, rgba(0,0,0,0.7) 100%);
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    flex-direction: column;
-    align-items: flex-start;
-    color: white;
-    display: flex;
-    justify-content:flex-end;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(180deg, rgba(0,0,0,.3) 10%, rgba(0,0,0,0.7) 100%);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  display: flex;
+  justify-content:flex-end;
 }
 </style>

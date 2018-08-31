@@ -3,7 +3,7 @@
     <div class="toolbar__top">
       <top-toolbar
         :title="title"
-        class="z__index-10"
+        class="z__index-10 indigo darken-3"
       />
       <top-toolbar
         class="z__index-10 toolbar__auxiliar"
@@ -43,15 +43,11 @@ export default {
     },
     methods:{
       scroll__content(e){
-        if(!this.formReportActive && e.target.scrollTop >=0){
-          console.log(e.target.scrollTop+ "  Positivo")
-        } else if(this.formReportActive && e.target.scrollTop >=0){
-          console.log(e.target.scrollTop+ "  Negativo")
-        }
-      },
-      scrolling(){
-        var nn = document.getElementById('content')
-        console.log(nn + "montado")
+        // if(!this.formReportActive && e.target.scrollTop >=0){
+        //   console.log(e.target.scrollTop+ "  Positivo")
+        // } else if(this.formReportActive && e.target.scrollTop >=0){
+        //   console.log(e.target.scrollTop+ "  Negativo")
+        // }
       }
     }
 }
@@ -70,7 +66,6 @@ export default {
 }
 .application--wrap{
   display: flex;
-  min-height: 100vh;
   height: 100vh;
   align-content: flex-start;
   flex-wrap: wrap;
@@ -92,7 +87,6 @@ export default {
   &__auxiliar{
     transition: transform .5s ease!important;
     transition-delay: .5s!important;
-    height: 105%;
   }
   &__top,
   &__bottom{
@@ -101,6 +95,9 @@ export default {
   }
   &__top{
     height: 55.4px;
+    @media ( max-height: 319px){
+      height: 47.4px;
+    }
     @include breakpoint(toolbarM){
       height: 47.4px;
     }

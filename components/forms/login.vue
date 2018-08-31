@@ -42,6 +42,7 @@
     },
 
     data: () => ({
+      transfomr: 0,
       password: null,
       email: null,
       textSubmit: 'Siguiente',
@@ -72,7 +73,12 @@
     methods: {
       submit (txt) {
         if(txt ==='Siguiente'){
+          this.transform = 50
           this.textSubmit = 'Ingresar'
+          var elemnt = document.getElementById('container__form__login')
+          elemnt.style.transform = 'translateX(-'+ this.transform +'%)'
+          elemnt = null
+          this.disabled=true
         }else{
 
         }
@@ -85,7 +91,7 @@
           this.disabled=true
         }
       },
-      login (){
+      next (){
         this.$router.push('/')
       }
     }

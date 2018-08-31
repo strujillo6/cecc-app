@@ -25,12 +25,12 @@
     </section>
     <section class="container__actions">
       <v-btn class="action__back" flat @click="back"  v-if="transform >= 24">
-        atras
         <v-icon>navigate_before</v-icon>
+        atras
       </v-btn>
       <v-btn class="action__next" flat @click="next" v-if="transform <= 74">
-        <v-icon>navigate_next</v-icon>
         siguiente
+        <v-icon>navigate_next</v-icon>
       </v-btn>
     </section>
   </div>
@@ -66,11 +66,13 @@ export default {
       this.transform+=25
       var elemnt = document.getElementById('container__items__form')
       elemnt.style.transform = 'translateX(-'+ this.transform +'%)'
+      elemnt = null
     },
     back(){
       this.transform-=25
       var elemnt = document.getElementById('container__items__form')
       elemnt.style.transform = 'translateX(-'+ this.transform +'%)'
+      elemnt = null
     }
   }
 }
@@ -107,7 +109,7 @@ export default {
   flex: 1;
   margin: 1em;
   &__map{
-    height: 210px;
+    height: 300px;
   }
 }
 .item__form:nth-child(2){
