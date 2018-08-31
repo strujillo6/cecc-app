@@ -13,6 +13,30 @@ module.exports = {
     link: []
   },
   /*
+  ** Meta Module
+  */
+  manifest: {
+    short_name: "Cecc",
+    name: 'Cecc App',
+    lang: 'es',
+    start_url: "index.html?launcher=true",
+    background_color: "#303f9f",
+    display: "standalone",
+    orientation: "portrait-primary",
+    theme_color: "#303f9f"
+  },
+  /*
+  ** Meta Module
+  */
+  meta: {
+    metaInfo: {
+      htmlAttrs: {
+        lang: 'es',
+        amp: undefined
+      }
+    }
+  },
+  /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
@@ -24,8 +48,7 @@ module.exports = {
     '@nuxtjs/auth',
     '@nuxtjs/pwa',
     '@nuxtjs/vuetify',
-    // ['@nuxtjs/localtunnel', { subdomain: 'cecc' }],
-    // ['nuxt-leaflet', {ssr: false}]
+    // ['@nuxtjs/localtunnel', { subdomain: 'cecc' }]
   ],
   /*
   **Vuetify configuration
