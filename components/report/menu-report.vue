@@ -52,7 +52,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   z-index: 2;
-  @media (min-width: 335px) {
+  @media (min-width: 365px) {
     top: 8px;
   }
   @include breakpoint(phablet){

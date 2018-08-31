@@ -97,9 +97,12 @@ export default {
   z-index: 1;
   overflow-y: auto;
   top: 0;
-  padding-top: 64px;
+  padding-top: 48px;
   bottom: 0;
   transition: all .25s ease-in-out;
+  @media (min-width: 365px) {
+     padding-top: 64px;
+  }
   @include breakpoint(phablet){
     padding-top: 0;
     width: 320px;
@@ -146,6 +149,7 @@ export default {
     opacity: 0;
     transition: all .4s ease-in;
     transition-delay: .7s;
+    margin-top: -54px;
   }
 }
 .btn__report{
