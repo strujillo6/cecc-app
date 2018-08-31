@@ -23,7 +23,7 @@ module.exports = {
     background_color: "#303f9f",
     display: "standalone",
     orientation: "portrait-primary",
-    theme_color: "#303f9f"
+    theme_color: "#283593"
   },
   /*
   ** Meta Module
