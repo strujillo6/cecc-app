@@ -3,3 +3,4 @@ const userPromise = process.BROWSER_BUILD ? System.import('~/database/user.json'
       reportPromise = process.BROWSER_BUILD ? System.import('~/database/report.json') : Promise.resolve(require('~/database/report.json'));
 
 export {userPromise, activityPromise, reportPromise}
+

@@ -1,7 +1,7 @@
 {
   "name": "test-nuxt",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
+  "description": "Aplicación Web para mitigar los conflictos en la Comunidad y mejorar la convivencia ciudadana haciendo que las personas tengan un mejor sentido de pertenencia",
   "author": "Sergio Trujillo del Valle <trujillo.sergio6@gmail.com>",
   "private": true,
   "scripts": {

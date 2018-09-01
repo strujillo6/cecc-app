@@ -1,6 +1,6 @@
 <template>
   <form class="form" >
-    <div class="logo">
+    <div class="logo__login">
       <img src="~/assets/img/logo.svg" alt="Logo de Cultura Etica y Convivencia Ciudadana">
     </div>
     <section class="container__form__login">
@@ -12,24 +12,41 @@
         data-vv-name="email"
         required
         @keyup="change"
+        v-if="showPassword"
       ></v-text-field>
       <v-text-field
         v-validate="'required'"
         v-model="password"
-        :error-messages="errors.collect('password')"
         label="Contraseña"
+        name="password"
         data-vv-name="password"
-        required
         type='password'
+        v-if="!showPassword"
+        required
       >
       </v-text-field>
     </section>
-    <v-btn class="indigo" @click="submit(textSubmit)" :dark="!disabled" :disabled="disabled">{{textSubmit}}</v-btn>
-    {{email}}
+    <v-btn block class="indigo" @click.prevent="login(textSubmit)" :dark="!disabled" :disabled="disabled">{{textSubmit}}</v-btn>
     <div class="actions">
-      <nuxt-link to=""  class="pa-3">Registrarse</nuxt-link>
+      <nuxt-link to="login/registro"  class="pa-3">Registrarse</nuxt-link>
       <nuxt-link to="" class="pa-3">Recuperar contraseña</nuxt-link>
     </div>
+    <v-snackbar
+      v-model="snackbar"
+      color="red"
+      multi-line="multi-line"
+      :timeout="7000"
+      vertical="vertical"
+    >
+      {{ error }}
+      <v-btn
+        dark
+        flat
+        @click="snackbar = false"
+      >
+        Close
+      </v-btn>
+    </v-snackbar>
   </form>
 </template>
 <script>
@@ -48,12 +65,9 @@
       textSubmit: 'Siguiente',
       select: null,
       disabled: true,
-      items: [
-        'Item 1',
-        'Item 2',
-        'Item 3',
-        'Item 4'
-      ],
+      showPassword: true,
+      error:false,
+      snackbar: false,
       dictionary: {
         custom: {
           email: {
@@ -71,28 +85,43 @@
       this.$validator.localize('en', this.dictionary)
     },
     methods: {
-      submit (txt) {
+      login (txt) {
         if(txt ==='Siguiente'){
-          this.transform = 50
-          this.textSubmit = 'Ingresar'
-          var elemnt = document.getElementById('container__form__login')
-          elemnt.style.transform = 'translateX(-'+ this.transform +'%)'
-          elemnt = null
-          this.disabled=true
+          this.showPassword= false
+          this.textSubmit = "Ingresar"
         }else{
-
+          if(this.email == this.$store.state.user.user.email){
+            if(this.password == this.$store.state.user.user.password){
+              this.$store.commit('loginUser', true)
+              this.$router.push('/')
+            }else{
+              this.error = "La contraseña es incorrecta, por favor vuelve a intentarlo"
+              this.snackbar=true
+              this.showPassword = false
+            }
+          }else{
+            this.error = "El correo ingresado, no aparece en el registro de la aplicación, por favor vuelve a intentarlo"
+            this.showPassword = true
+            this.snackbar=true
+          }
         }
       },
       // Escucha el evento keyup en el input
-      change(){
-        if(this.email && this.$validator.errors.items.length == 0){
-          this.disabled=false
-        } else{
-          this.disabled=true
+      change(e){
+        console.log(e.key)
+        var n = e.key
+        if(n === 'Enter'){
+          e.preventDefault()
+          this.login(this.textSubmit)
+        }else{
+          // Valida si la variable email tiene datos y no tiene errores
+          if(this.email && this.$validator.errors.items.length == 0){
+            this.disabled=false
+          }
         }
       },
-      next (){
-        this.$router.push('/')
+      enter(){
+
       }
     }
   }
@@ -103,15 +132,7 @@
   text-align: center;
   padding: 1em;
 }
-.logo{
+.logo__login{
   padding-bottom: 20px;
-}
-.v-input {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-.container__form__login{
-  width: 200%;
-  display: flex;
 }
 </style>

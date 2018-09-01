@@ -6,7 +6,8 @@ import moduleActivitys from './activitys'
 const createStore = () => {
   return new Vuex.Store({
     state: {
-      formReportActive: false
+      formReportActive: false,
+      autehenticate: false
     },
     mutations: {
       active (state) {
@@ -14,6 +15,9 @@ const createStore = () => {
       },
       inactive (state) {
         state.formReportActive = true
+      },
+      loginUser (state, login){
+        state.autehenticate = login
       }
     },
     modules: {

@@ -1,8 +1,9 @@
 {
       "id": 1,
       "name": "Santiago",
-      "lastName": "Valbuena Trujillo",
-      "email": "email@test.co",
+      "lastName": "Castillo Valencia",
+      "email": "user@test.co",
+      "password": "password",
       "phone": "300300300",
       "Gener": "Sr",
       "age":"",

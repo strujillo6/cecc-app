@@ -37,17 +37,24 @@
         <v-divider></v-divider>
 
         <v-list>
-          <v-list-tile >
+          <!-- <v-list-tile >
             <v-list-tile-title>Configuración</v-list-tile-title>
             <v-spacer></v-spacer>
             <v-icon >settings</v-icon>
-          </v-list-tile>
+          </v-list-tile> -->
 
           <v-list-tile>
             <v-list-tile-title>Ayuda</v-list-tile-title>
             <v-spacer></v-spacer>
             <v-icon >help</v-icon>
           </v-list-tile>
+
+          <v-list-tile @click="logout">
+            <v-list-tile-title>Salir</v-list-tile-title>
+            <v-spacer></v-spacer>
+            <v-icon >exit_to_app</v-icon>
+          </v-list-tile>
+
         </v-list>
       </v-card>
     </v-menu>
@@ -60,6 +67,12 @@ export default {
     ...mapState({
       user: state => state.user.user,
     })
+  },
+  methods:{
+    logout(){
+      this.$store.commit('loginUser', false)
+      this.$router.push('/login')
+    }
   }
 }
 </script>

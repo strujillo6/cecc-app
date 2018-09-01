@@ -11,6 +11,9 @@ export default {
     layout: 'login',
     components: {
       'cecc-form-login': Cform
+    },
+    fetch ({ store }) {
+      return store.dispatch('user/getUser')
     }
 }
 </script>

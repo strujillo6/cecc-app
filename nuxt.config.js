@@ -1,18 +1,6 @@
 module.exports = {
   mode: "spa",
   /*
-  ** Headers of the page
-  */
-  head: {
-    title: 'cecc',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js project' }
-    ],
-    link: []
-  },
-  /*
   ** Meta Module
   */
   manifest: {
@@ -30,10 +18,17 @@ module.exports = {
   */
   meta: {
     metaInfo: {
+      title: 'Cecc-App',
       htmlAttrs: {
-        lang: 'es',
-        amp: undefined
-      }
+        lang: 'es'
+      },
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ],
+      noscript: [
+        { innerHTML: 'Esta Web App, requiere del uso de Javascript.' }
+      ]
     }
   },
   /*
@@ -45,7 +40,7 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/auth',
+    // '@nuxtjs/auth',
     '@nuxtjs/pwa',
     '@nuxtjs/vuetify',
     // ['@nuxtjs/localtunnel', { subdomain: 'cecc' }]
