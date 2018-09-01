@@ -10,8 +10,9 @@
       <div class="item__form">
         <h2 class="pb-2">Ubicación</h2>
         <cecc-map class="item__form__map" :locale="location" />
+        <p v-if="file">{{file.name}}</p>
       </div>
-      <div class="item__form">
+      <div class="item__form" >
         <v-textarea
           name="description"
           label="Descripción"
@@ -20,7 +21,9 @@
         />
       </div>
       <div class="item__form">
-
+        <cecc-file :capture="true" :movil="true" v-model="file" class="capture-movil"/>
+        <cecc-file  v-model="file"/>
+        <p v-if="file">{{file.name}}</p>
       </div>
     </section>
     <section class="container__actions">
@@ -37,10 +40,12 @@
 </template>
 <script>
 import Map from '~/components/report/map-report'
+import File from '../../components/forms/file-image'
 import { mapState} from 'vuex'
 export default {
   components: {
-    'cecc-map': Map
+    'cecc-map': Map,
+    'cecc-file': File
   },
   data: () => ({
     items:[
@@ -50,6 +55,7 @@ export default {
     ],
     description: null,
     transform: 0,
+    file: null,
     nameRules: [
         v => !!v || 'El campo es requerido',
         v => v.length <= 10 || 'Name must be less than 10 characters'
@@ -78,6 +84,12 @@ export default {
 }
 </script>
 <style lang="scss">
+@import '~/assets/css/tools/_mixin.scss';
+.capture-movil{
+  @include breakpoint(laptop){
+    display: none;
+  }
+}
 .container{
   &__form__main,
   &__actions{
