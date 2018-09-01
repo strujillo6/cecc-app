@@ -4,7 +4,7 @@
     :color="color"
     flat
   >
-    <v-btn flat icon v-if="!menu">
+    <v-btn flat icon v-if="!menu" @click="toogle(false)">
       <v-icon>navigate_before</v-icon>
     </v-btn>
     <nuxt-link class="logo" v-if="menu" to="./">
@@ -17,7 +17,7 @@
       <cecc-menu/>
     </v-toolbar-items>
     <cecc-card-user v-if="menu"/>
-    <v-btn flat icon v-if="!menu">
+    <v-btn flat icon v-if="!menu" @click="toogle(false)">
       <v-icon>close</v-icon>
     </v-btn>
   </v-toolbar>
@@ -25,6 +25,7 @@
 <script>
 import Carduser from './menu-user'
 import Cmenu from './menu-links'
+import { mapMutations } from 'vuex'
 export default {
   components: {
     'cecc-card-user':Carduser,
@@ -46,6 +47,9 @@ export default {
       type:Boolean,
       default: true
     }
+  },
+  methods:{
+    ...mapMutations({ toogle:'toogleForm'})
   }
 }
 </script>

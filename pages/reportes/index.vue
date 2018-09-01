@@ -46,14 +46,14 @@ export default {
   },
   data: ()=> ({
     active: true,
-    formActiveSave: false,
     iconMenu: 'menu'
   }),
   computed:
   {
     ...mapState({
       location: state => state.location.location,
-      error: state => state.location.error
+      error: state => state.location.error,
+      formActiveSave: state => state.formReportActive
     })
   },
   methods: {
@@ -72,14 +72,12 @@ export default {
     },
     formActive(){
       if(this.formActiveSave == false){
-        this.formActiveSave = true
-        this.add()
+        this.toogle(true)
       }else{
-        this.formActiveSave = false
-        this.remove()
+        this.toogle(false)
       }
     },
-    ...mapMutations({ remove:'active', add:'inactive'})
+    ...mapMutations({ toogle:'toogleForm'})
   },
   middleware: 'location'
 }

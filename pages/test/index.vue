@@ -12,6 +12,7 @@ export default {
   {
     ...mapState({
       user: state => state.user.user,
+      
     })
   }
 }

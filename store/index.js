@@ -10,11 +10,8 @@ const createStore = () => {
       autehenticate: false
     },
     mutations: {
-      active (state) {
-        state.formReportActive = false
-      },
-      inactive (state) {
-        state.formReportActive = true
+      toogleForm (state, value) {
+        state.formReportActive = value
       },
       loginUser (state, login){
         state.autehenticate = login

@@ -12,6 +12,7 @@
         data-vv-name="email"
         required
         @keyup="change"
+        @keydown.enter.prevent="login(textSubmit)"
         v-if="showPassword"
       ></v-text-field>
       <v-text-field
@@ -23,6 +24,7 @@
         type='password'
         v-if="!showPassword"
         required
+        @keydown.enter.prevent="login(textSubmit)"
       >
       </v-text-field>
     </section>
@@ -108,16 +110,9 @@
       },
       // Escucha el evento keyup en el input
       change(e){
-        console.log(e.key)
-        var n = e.key
-        if(n === 'Enter'){
-          e.preventDefault()
-          this.login(this.textSubmit)
-        }else{
-          // Valida si la variable email tiene datos y no tiene errores
-          if(this.email && this.$validator.errors.items.length == 0){
-            this.disabled=false
-          }
+        // Valida si la variable email tiene datos y no tiene errores
+        if(this.email && this.$validator.errors.items.length == 0){
+          this.disabled=false
         }
       },
       enter(){
