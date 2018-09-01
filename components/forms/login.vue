@@ -30,7 +30,7 @@
     </section>
     <v-btn block class="indigo" @click.prevent="login(textSubmit)" :dark="!disabled" :disabled="disabled">{{textSubmit}}</v-btn>
     <div class="actions">
-      <nuxt-link to="login/registro"  class="pa-3">Registrarse</nuxt-link>
+      <nuxt-link to=""  class="pa-3">Registrarse</nuxt-link>
       <nuxt-link to="" class="pa-3">Recuperar contraseña</nuxt-link>
     </div>
     <v-snackbar
