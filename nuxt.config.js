@@ -1,5 +1,4 @@
 module.exports = {
-  mode: "spa",
   /*
   ** Meta Module
   */
