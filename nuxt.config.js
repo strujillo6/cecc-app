@@ -79,6 +79,18 @@ module.exports = {
     '~/plugins/database'
   ],
   /*
+  ** serverMiddleware
+  */
+  serverMiddleware: [ 'redirect-ssl' ],
+  /*
+  ** nuxt-robots-module
+  */
+  'nuxt-robots-module': {
+    /* module options */
+    UserAgent: '*',
+    Disallow: '/',
+  },
+  /*
   ** Build configuration
   */
   build: {
@@ -98,12 +110,6 @@ module.exports = {
         })
       }
     }
-  },
-  serverMiddleware: [ 'redirect-ssl' ],
-  'nuxt-robots-module': {
-    /* module options */
-    UserAgent: '*',
-    Disallow: '/',
   },
 }
 
