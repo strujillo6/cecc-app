@@ -6,7 +6,7 @@ module.exports = {
     short_name: "Cecc",
     name: 'Cecc App',
     lang: 'es',
-    start_url: "https://cecc-app.herokuapp.com/?launcher=true",
+    start_url: "./?utm_source=pwa_cee-app",
     background_color: "#303f9f",
     display: "standalone",
     orientation: "portrait-primary",
