@@ -6,11 +6,11 @@ module.exports = {
     short_name: "Cecc",
     name: 'Cecc App',
     lang: 'es',
-    background_color: "#303f9f",
     display: "standalone",
     orientation: "portrait-primary",
+    background_color: "#303f9f",
     theme_color: "#283593",
-    start_url: "./?launcher=true",
+    // start_url: "./?launcher=true",
   },
   /*
   ** Meta Module
