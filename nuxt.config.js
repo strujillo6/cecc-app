@@ -42,6 +42,7 @@ module.exports = {
     // '@nuxtjs/auth',
     '@nuxtjs/pwa',
     '@nuxtjs/vuetify',
+    'nuxt-robots-module'
     // ['@nuxtjs/localtunnel', { subdomain: 'cecc' }]
   ],
   /*
@@ -97,6 +98,12 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  serverMiddleware: [ 'redirect-ssl' ],
+  'nuxt-robots-module': {
+    /* module options */
+    UserAgent: '*',
+    Disallow: '/',
+  },
 }
 
