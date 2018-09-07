@@ -10,7 +10,7 @@ module.exports = {
     display: "standalone",
     orientation: "portrait-primary",
     theme_color: "#283593",
-    start_url: "./?utm_source=pwa_cee-app",
+    start_url: "./?launcher=true",
   },
   /*
   ** Meta Module
@@ -83,7 +83,7 @@ module.exports = {
   */
   serverMiddleware: [ 'redirect-ssl' ],
   /*
-  ** nuxt-robots-module
+  ** Plugings
   */
   'nuxt-robots-module': {
     /* module options */
