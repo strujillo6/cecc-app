@@ -61,16 +61,20 @@ module.exports = {
     '@/assets/css/main.scss',
     './node_modules/leaflet/dist/leaflet.css'
   ],
-  // axios: {
-  //   baseURL: 'https://stark-brushlands-17142.herokuapp.com/'
-  // },
+  axios: {
+    baseURL: 'http://127.0.0.1:3333/api'
+  },
 
   auth: {
-    // endpoints: {
-    //   login:  { url: '/users' },
-    //   logout: false,
-    //   user:   { url: '/users/current' }
-    // }
+    strategies: {
+      local: {
+        endpoints: {
+          login: { url: 'login', method: 'post', propertyName: 'data.token' },
+          user: { url: 'me', method: 'get', propertyName: 'data' },
+          logout: false
+        }
+      }
+    }
   },
   /*
   ** Plugings

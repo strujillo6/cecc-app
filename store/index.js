@@ -7,16 +7,10 @@ const createStore = () => {
   return new Vuex.Store({
     state: {
       formReportActive: false,
-      autehenticate: false,
       title: ""
     },
     mutations: {
-      toogleForm (state, value) {
-        state.formReportActive = value
-      },
-      loginUser (state, login){
-        state.autehenticate = login
-      }
+
     },
     modules: {
       location: moduleLocation,
