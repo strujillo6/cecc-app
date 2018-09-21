@@ -26,7 +26,6 @@ import Toolbar from '~/components/menu/toolbar.vue'
 import Btoolbar from '~/components/menu/menu-bottom.vue'
 import { mapState } from 'vuex'
 export default {
-  middleware: 'athentication',
   components: {
     'top-toolbar':    Toolbar,
     'bottom-toolbar': Btoolbar
