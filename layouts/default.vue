@@ -1,10 +1,15 @@
 <template>
   <v-app class="indigo darken-2">
-    <div class="toolbar__top">
+
+    <div class="toolbar__top"><!-- contenedor del toolbar -->
+
+      <!-- toolbar principal -->
       <top-toolbar
         :title="title"
         class="z__index-10 indigo darken-3"
       />
+
+      <!-- toolbar auxiliar -->
       <top-toolbar
         class="z__index-10 toolbar__auxiliar"
         color="grey lighten-2"
@@ -12,13 +17,19 @@
         :dark='false'
         :class="{formActiveMenu: formReportActive}"
       />
-    </div>
+
+    </div> <!-- fin del contenedor del toolbar -->
+
+    <!-- contenedor principal del contenido -->
     <div class="content" id="content" @scroll="scroll__content">
       <nuxt class="main__container"/>
     </div>
+
+    <!-- menu para la version movil -->
     <div class="toolbar__bottom" :class="{formActiveBottom: formReportActive}">
        <bottom-toolbar class="z__index-10"/>
     </div>
+
   </v-app>
 </template>
 <script>

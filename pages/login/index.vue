@@ -32,7 +32,8 @@ export default {
 }
 .form__container{
   min-width: 300px;
-  max-width: 450px;
+  max-width: 364px;
+  width: auto;
   margin: 1em;
   overflow: hidden;
 }

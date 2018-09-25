@@ -1,11 +1,14 @@
 <template>
-  <section>
+  <div>
+
     <cecc-hero :img='activitys[0].image'/>
+
     <section class="card__container">
+
       <cecc-event v-for="(event, index) in activitys" :key="index" :event="event"/>
 
     </section>
-  </section>
+  </div>
 </template>
 <script>
 import Hero from '~/components/activitys/hero'

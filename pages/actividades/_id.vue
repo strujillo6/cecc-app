@@ -1,29 +1,33 @@
 <template>
-    <section>
+    <div>
+
+      <!-- Contenedor del header hero -->
       <cecc-hero
         :img='event.image'
         title="Barrio / localidad"
         :subtitle="event.date"
       />
-      <section class="container__event">
+
+      <section class="container__event"><!-- contenido de los eventos -->
         <v-card>
-        <v-card-title primary-title>
-            <h2 class="display-3 mb-0">{{event.title}}</h2>
-        </v-card-title>
-        <v-card-text>
-          <div>{{event.short_description}}</div>
-        </v-card-text>
-        <v-card-text>
-          <h3 class="display-2 mb-0">Organiza</h3>
-          <div class="container__organizer">
-            <cecc-circle class="cecc-circle" img="https://www.ccb.org.co/var/ccb/storage/images/ccb/clusters/cluster-de-industrias-creativas-y-contenidos/contenido-auxiliar/multimedia/imagenes-aliados/idartes/147568-2-esl-CO/idartes_large.jpg"/>
-            <cecc-circle class="cecc-circle" img="https://pbs.twimg.com/profile_images/1032288959806820352/6Mr1J59U_400x400.jpg"/>
-            <cecc-circle class="cecc-circle" img="http://www.bogota.gov.co/sites/default/files/styles/large/public/field/image/Estimulos%202015.jpg?itok=0cp_jsQj"/>
-          </div>
-        </v-card-text>
-      </v-card>
-      </section>
-    </section>
+          <v-card-title primary-title>
+              <h2 class="display-3 mb-0">{{event.title}}</h2>
+          </v-card-title>
+          <v-card-text>
+            <div>{{event.short_description}}</div>
+          </v-card-text>
+          <v-card-text>
+            <h3 class="display-2 mb-0">Organiza</h3>
+            <div class="container__organizer">
+              <cecc-circle class="cecc-circle" img="https://www.ccb.org.co/var/ccb/storage/images/ccb/clusters/cluster-de-industrias-creativas-y-contenidos/contenido-auxiliar/multimedia/imagenes-aliados/idartes/147568-2-esl-CO/idartes_large.jpg"/>
+              <cecc-circle class="cecc-circle" img="https://pbs.twimg.com/profile_images/1032288959806820352/6Mr1J59U_400x400.jpg"/>
+              <cecc-circle class="cecc-circle" img="http://www.bogota.gov.co/sites/default/files/styles/large/public/field/image/Estimulos%202015.jpg?itok=0cp_jsQj"/>
+            </div>
+          </v-card-text>
+        </v-card>
+      </section><!-- fin del contenido de los eventos -->
+
+    </div>
 </template>
 <script>
 import Hero from '~/components/activitys/hero'
