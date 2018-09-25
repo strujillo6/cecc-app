@@ -10,7 +10,9 @@ const createStore = () => {
       title: ""
     },
     mutations: {
-
+      toogleForm(state, toogle){
+        state.formReportActive = toogle
+      }
     },
     modules: {
       location: moduleLocation,
