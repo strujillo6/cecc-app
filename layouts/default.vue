@@ -67,7 +67,7 @@ export default {
 }
 .application--wrap{
   display: flex;
-  height: 100vh;
+  height: 100%;
   align-content: flex-start;
   flex-wrap: wrap;
   position: relative;
