@@ -8,6 +8,11 @@ html{
 
   overflow: hidden;
 }
+
+html, body, #__nuxt, .default__layout{
+  height: 100%;
+}
+
 // ANIMATION
 .page-enter-active, .page-leave-active {
   transition: opacity .5s

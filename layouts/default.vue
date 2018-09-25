@@ -1,5 +1,5 @@
 <template>
-  <v-app class="indigo darken-2">
+  <v-app class="default__layout indigo darken-2">
     <div class="toolbar__top">
       <top-toolbar
         :title="title"
@@ -67,7 +67,7 @@ export default {
 }
 .application--wrap{
   display: flex;
-  height: 100%;
+  height: 100vh;
   align-content: flex-start;
   flex-wrap: wrap;
   position: relative;
