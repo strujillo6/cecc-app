@@ -1,13 +1,13 @@
 module.exports = {
   /*
-  ** Meta Module
+  ** Manifiest Module
   */
   manifest: {
     short_name: "Cecc",
     name: 'Cecc App',
     lang: 'es',
     display: "standalone",
-    orientation: "portrait-primary",
+    orientation: "portrait",
     background_color: "#303f9f",
     theme_color: "#283593",
     // start_url: "./?launcher=true",
@@ -26,7 +26,7 @@ module.exports = {
         { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ],
       noscript: [
-        { innerHTML: 'Esta Web App, requiere del uso de Javascript.' }
+        { innerHTML: 'Esta Web App, requiere del uso de Javascript para un correcto funcionamiento.' }
       ]
     }
   },
@@ -39,7 +39,7 @@ module.exports = {
   */
   modules: [
     '@nuxtjs/axios',
-    // '@nuxtjs/auth',
+    '@nuxtjs/auth',
     '@nuxtjs/pwa',
     '@nuxtjs/vuetify',
     'nuxt-robots-module'
@@ -61,10 +61,15 @@ module.exports = {
     '@/assets/css/main.scss',
     './node_modules/leaflet/dist/leaflet.css'
   ],
+  /*
+  ** Axios configuration
+  */
   axios: {
     baseURL: 'http://127.0.0.1:3333/api'
   },
-
+  /*
+  ** Auth configuration
+  */
   auth: {
     strategies: {
       local: {
